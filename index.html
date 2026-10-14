@@ -1,0 +1,524 @@
+<title>Microneedling Capilar con Marta Leiva</title>
+<meta name="description" content="Formación en directo de microneedling capilar para profesionales de la estética. 2 horas en directo por Zoom con Marta Leiva · Martes 10 de noviembre, 19:00 (España).">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Cormorant+Garamond:wght@400;500&family=Jost:wght@300;400;500&display=swap">
+<style>
+/* Layout: the page reads like one of Marta's own carousels, stretched long. Blush paper, soft circles behind her photos,
+   tall condensed serif headlines with a nude highlight bar, spaced-caps signatures between hairlines.
+   Single light theme on purpose: it is her brand. */
+:root{
+  color-scheme:light;
+  --blush:#f3e7dd; --blush-2:#e9d7ca; --nude:#e9c9bd; --taupe:#9c7869; --rose:#8e5f50; --rose-2:#b97f6f;
+  --ink:#2a1c18; --muted:#6e584f; --line:#d5bdb0; --white:#fffaf7;
+  --display:"Instrument Serif","Bodoni 72","Didot",Georgia,serif;
+  --caps:"Cormorant Garamond","Cormorant",Garamond,Georgia,serif;
+  --body:"Jost","Avenir Next","Century Gothic","Helvetica Neue",Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{background:var(--blush);color:var(--ink);font-family:var(--body);font-weight:300;font-size:1.0625rem;line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}
+img,video{max-width:100%;height:auto;display:block}
+h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.02;letter-spacing:-.005em;text-wrap:balance;margin:0}
+p{margin:0}
+b,strong{font-weight:500}
+.wrap{max-width:1140px;margin-inline:auto;padding-inline:clamp(18px,4.5vw,44px)}
+section{padding-block:clamp(70px,10vw,130px);position:relative}
+:focus-visible{outline:2px solid var(--rose);outline-offset:3px}
+
+/* signature details from her posts */
+.eyebrow{display:inline-flex;flex-direction:column;gap:12px;font-family:var(--body);font-weight:400;font-size:.72rem;letter-spacing:.32em;text-transform:uppercase;color:var(--ink)}
+.eyebrow::after{content:"";width:64px;height:1px;background:var(--taupe)}
+.eyebrow.center{align-items:center}
+.hl{background:linear-gradient(transparent 6%,var(--nude) 6%,var(--nude) 96%,transparent 96%);padding-inline:.12em;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.caps{font-family:var(--caps);text-transform:uppercase;letter-spacing:.3em;font-weight:400}
+.sig{display:flex;align-items:center;justify-content:center;gap:18px;font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:var(--muted);font-weight:400}
+.sig::before,.sig::after{content:"";height:1px;width:56px;background:var(--line)}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.7em;min-height:54px;padding:.9em 2em;border-radius:999px;font-family:var(--body);font-weight:400;font-size:.95rem;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;transition:background .25s ease,color .25s ease,transform .25s ease;border:1px solid transparent;cursor:pointer}
+.btn--ink{background:var(--ink);color:var(--blush)}
+.btn--ink:hover{background:var(--rose);transform:translateY(-1px)}
+.link-arrow{display:inline-flex;align-items:center;gap:14px;font-size:.88rem;letter-spacing:.06em;text-decoration:none;color:var(--ink)}
+.link-arrow::after{content:"";width:46px;height:1px;background:var(--ink);transition:width .25s ease}
+.link-arrow:hover::after{width:64px}
+
+/* top */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--blush) 94%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:66px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.badge{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:var(--white);display:grid;place-items:center;overflow:hidden;flex:none}
+.badge img{width:84%}
+.brand .caps{font-size:.95rem;letter-spacing:.32em}
+.top .btn{min-height:42px;padding:.5em 1.3em;font-size:.78rem}
+
+/* hero */
+.hero{padding-block:clamp(36px,6vw,80px) clamp(64px,9vw,110px);overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.08fr .92fr;gap:clamp(36px,6vw,84px);align-items:center}
+.hero-copy{display:flex;flex-direction:column;gap:28px;min-width:0;position:relative;z-index:1}
+.hero h1{font-size:clamp(3rem,7.4vw,6rem)}
+.lede{font-size:clamp(1.05rem,1.5vw,1.18rem);color:var(--muted);max-width:33em}
+.price{display:flex;align-items:baseline;gap:16px;flex-wrap:wrap}
+.price .now{font-family:var(--display);font-size:clamp(2.8rem,4.6vw,3.6rem);line-height:1}
+.price .was{font-size:1rem;color:var(--muted);text-decoration:line-through;text-decoration-color:var(--rose)}
+.price .tag{font-size:.68rem;letter-spacing:.24em;text-transform:uppercase;color:var(--white);background:var(--rose);padding:.5em 1em}
+.actions{display:flex;align-items:center;gap:26px;flex-wrap:wrap}
+.facts{display:grid;grid-template-columns:repeat(4,auto);justify-content:start;gap:10px 34px;padding-top:24px;border-top:1px solid var(--line)}
+.facts div{display:flex;flex-direction:column}
+.facts dt{font-size:.66rem;letter-spacing:.26em;text-transform:uppercase;color:var(--muted);font-weight:400}
+.facts dd{margin:0;font-family:var(--display);font-size:1.6rem;line-height:1.2;font-variant-numeric:tabular-nums}
+
+.hero-media{position:relative;justify-self:center;width:100%;max-width:430px}
+.hero-media::before{content:"";position:absolute;width:128%;aspect-ratio:1;border-radius:50%;background:var(--blush-2);left:50%;top:46%;transform:translate(-50%,-50%);z-index:0}
+.portrait{position:relative;z-index:1;border-radius:220px 220px 6px 6px;overflow:hidden;aspect-ratio:3/4.35;max-width:100%;box-shadow:0 40px 80px -40px rgba(42,28,24,.45)}
+.portrait img{width:100%;height:100%;object-fit:cover}
+.hero-badge{position:absolute;z-index:2;left:-34px;bottom:12%;width:132px;height:132px;border-radius:50%;background:var(--white);border:1px solid var(--line);display:grid;place-items:center;box-shadow:0 18px 40px -22px rgba(42,28,24,.4)}
+.hero-badge img{width:80%}
+
+.countdown{display:flex;align-items:center;gap:20px;flex-wrap:wrap;color:var(--muted);font-size:.85rem}
+.countdown ol{list-style:none;margin:0;padding:0;display:flex;gap:6px}
+.countdown li{display:flex;flex-direction:column;align-items:center;min-width:58px;padding:8px 6px;background:var(--white);border:1px solid var(--line)}
+.countdown b{font-family:var(--display);font-weight:400;font-size:1.7rem;line-height:1;color:var(--ink);font-variant-numeric:tabular-nums}
+.countdown span{font-size:.58rem;letter-spacing:.22em;text-transform:uppercase}
+
+/* video */
+.video{background:var(--white)}
+.video .wrap{display:grid;grid-template-columns:minmax(0,360px) 1fr;gap:clamp(40px,8vw,110px);align-items:center}
+.reel-wrap{position:relative;justify-self:center;width:100%;max-width:360px}
+.reel-wrap::before{content:"";position:absolute;width:115%;aspect-ratio:1;border-radius:50%;background:var(--blush);left:50%;top:62%;transform:translate(-50%,-50%)}
+.reel{position:relative;aspect-ratio:9/16;border-radius:24px;overflow:hidden;background:var(--ink);box-shadow:0 40px 70px -36px rgba(42,28,24,.6);max-width:100%}
+.reel video{width:100%;height:100%;object-fit:cover}
+.play{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;border:0;background:rgba(42,28,24,.16);color:#fffaf7;cursor:pointer;font-family:var(--body)}
+.play i{width:78px;height:78px;border-radius:50%;background:rgba(255,250,247,.94);display:grid;place-items:center;transition:transform .25s ease}
+.play i::after{content:"";border-style:solid;border-width:11px 0 11px 18px;border-color:transparent transparent transparent #2a1c18;margin-left:5px}
+.play:hover i{transform:scale(1.06)}
+.play span{font-size:.7rem;letter-spacing:.3em;text-transform:uppercase;text-shadow:0 1px 8px rgba(0,0,0,.4)}
+.video-copy{display:flex;flex-direction:column;gap:26px;min-width:0}
+.video-copy blockquote{margin:0;font-family:var(--display);font-size:clamp(2rem,4.2vw,3.4rem);line-height:1.08}
+.video-copy blockquote em{font-style:italic;color:var(--rose)}
+.video-copy figcaption{font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:var(--muted)}
+.video-copy p{color:var(--muted);max-width:32em}
+
+/* section heads */
+.head{display:flex;flex-direction:column;gap:20px;max-width:44rem;margin-bottom:clamp(40px,6vw,64px)}
+.head.center{margin-inline:auto;text-align:center;align-items:center}
+.head h2{font-size:clamp(2.4rem,5.2vw,4rem)}
+.head p{color:var(--muted);max-width:36em}
+
+/* para quién */
+.who{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(18px,2.5vw,28px)}
+.who article{background:var(--white);padding:34px 30px 32px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.who .tag{align-self:flex-start;font-size:.68rem;letter-spacing:.24em;text-transform:uppercase;color:var(--white);background:var(--taupe);padding:.45em .9em}
+.who article:nth-child(2) .tag{background:var(--rose)}
+.who article:nth-child(3) .tag{background:var(--rose-2)}
+.who h3{font-size:1.85rem}
+.who p{color:var(--muted);font-size:.98rem}
+
+/* programa */
+.programa{background:var(--blush-2)}
+.programa .wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(40px,6vw,90px);align-items:start}
+.programa .head{position:sticky;top:110px;margin-bottom:0}
+.agenda{list-style:none;margin:0;padding:0}
+.agenda li{display:grid;grid-template-columns:100px 1fr;gap:22px;padding-block:26px;border-bottom:1px solid var(--line)}
+.agenda li:first-child{border-top:1px solid var(--line)}
+.agenda time{font-family:var(--display);font-size:1.35rem;color:var(--rose);font-variant-numeric:tabular-nums;white-space:nowrap}
+.agenda h3{font-size:1.7rem;margin-bottom:6px}
+.agenda p{color:var(--muted);font-size:.98rem}
+.agenda div{min-width:0}
+
+/* galería */
+.gallery{display:grid;grid-template-columns:1.2fr .8fr .8fr;grid-template-rows:auto auto;gap:14px}
+.gallery figure{margin:0;overflow:hidden;background:var(--blush-2)}
+.gallery img{width:100%;height:100%;object-fit:cover;aspect-ratio:1}
+.gallery .big{grid-row:span 2}
+.gallery .big img{aspect-ratio:auto;min-height:100%}
+.gallery-note{margin-top:26px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;color:var(--muted);font-size:.95rem}
+.gallery-note p{max-width:40em}
+
+/* incluye */
+.incluye{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line)}
+.incluye div{padding:30px 28px 30px 0;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:8px;min-width:0}
+.incluye div:not(:nth-child(3n+1)){padding-left:28px;border-left:1px solid var(--line)}
+.incluye h3{font-size:1.65rem}
+.incluye p{color:var(--muted);font-size:.97rem}
+
+/* marta */
+.marta{background:var(--white);overflow:hidden}
+.marta .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(40px,7vw,100px);align-items:center}
+.marta-media{position:relative;justify-self:center;width:100%;max-width:420px}
+.marta-media::before{content:"";position:absolute;width:120%;aspect-ratio:1;border-radius:50%;background:var(--blush);left:42%;top:40%;transform:translate(-50%,-50%)}
+.marta-media .portrait{border-radius:6px 6px 220px 220px}
+.marta-copy{display:flex;flex-direction:column;gap:24px;min-width:0}
+.marta-copy img.logo{width:min(260px,64%);height:auto}
+.marta-copy h2{font-size:clamp(2.4rem,5vw,3.8rem)}
+.marta-copy p{color:var(--muted);max-width:33em}
+.stats{display:grid;grid-template-columns:repeat(3,auto);justify-content:start;gap:12px 40px;padding-block:22px;border-block:1px solid var(--line)}
+.stats div{display:flex;flex-direction:column}
+.stats b{font-family:var(--display);font-weight:400;font-size:2.4rem;line-height:1}
+.stats span{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.cred{display:flex;align-items:center;gap:16px;text-decoration:none;color:var(--muted);font-size:.82rem;letter-spacing:.04em;line-height:1.4;padding:12px 18px;background:var(--white);border:1px solid var(--line);align-self:flex-start;max-width:100%}
+.cred img{width:132px;height:auto;flex:none;padding-right:16px;border-right:1px solid var(--line);box-sizing:content-box}
+.cred span{min-width:0}
+.cred--block{background:var(--blush);padding:16px 20px}
+.cred--block img{width:150px}
+.motto{font-family:var(--display);font-style:italic;font-size:1.6rem;color:var(--rose);line-height:1.2}
+
+/* pasos */
+.pasos{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(20px,3vw,34px);counter-reset:p}
+.pasos div{display:flex;flex-direction:column;gap:10px;min-width:0}
+.pasos div::before{counter-increment:p;content:counter(p);width:46px;height:46px;border-radius:50%;border:1px solid var(--taupe);display:grid;place-items:center;font-family:var(--display);font-size:1.4rem;color:var(--rose)}
+.pasos h3{font-size:1.55rem}
+.pasos p{color:var(--muted);font-size:.97rem}
+
+/* faq */
+.faq{background:var(--blush-2)}
+.faq .wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(40px,6vw,90px)}
+.faq .head{margin-bottom:0}
+details{border-bottom:1px solid var(--line);padding-block:22px}
+details:first-of-type{border-top:1px solid var(--line)}
+summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:baseline;gap:20px;font-family:var(--display);font-size:1.5rem;line-height:1.2}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-family:var(--body);font-weight:300;font-size:1.5rem;color:var(--rose);transition:transform .2s ease;flex:none}
+details[open] summary::after{transform:rotate(45deg)}
+details p{color:var(--muted);margin-top:12px;max-width:40em}
+
+/* cierre */
+.cierre{padding-block:clamp(70px,10vw,130px);overflow:hidden}
+.cierre .wrap{display:grid;grid-template-columns:auto 1fr;gap:clamp(36px,6vw,80px);align-items:center}
+.cierre-photo{width:clamp(220px,26vw,320px);aspect-ratio:1;border-radius:50%;overflow:hidden;justify-self:center;box-shadow:0 0 0 14px var(--blush-2)}
+.cierre-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+.cierre-copy{display:flex;flex-direction:column;gap:22px;min-width:0}
+.cierre-copy h2{font-size:clamp(2.6rem,5.6vw,4.4rem)}
+.cierre-copy p{color:var(--muted)}
+.dudas{font-size:.95rem;color:var(--muted)}
+.dudas a{color:var(--rose);text-underline-offset:4px}
+
+footer{padding-block:34px 120px;border-top:1px solid var(--line);display:flex;flex-direction:column;gap:14px;align-items:center;text-align:center;font-size:.85rem;color:var(--muted)}
+
+/* barra móvil */
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:30;display:none;align-items:center;justify-content:space-between;gap:12px;padding:12px 16px calc(12px + env(safe-area-inset-bottom,0px));background:var(--white);border-top:1px solid var(--line);box-shadow:0 -12px 30px -22px rgba(42,28,24,.5)}
+.bar .p{display:flex;flex-direction:column;line-height:1.1}
+.bar .p b{font-family:var(--display);font-weight:400;font-size:1.65rem}
+.bar .p span{font-size:.74rem;color:var(--muted)}
+.bar .btn{min-height:46px;padding:.55em 1.4em;font-size:.8rem}
+
+@media (max-width:920px){
+  .hero .wrap,.video .wrap,.programa .wrap,.marta .wrap,.faq .wrap,.cierre .wrap{grid-template-columns:1fr}
+  .hero-media{max-width:330px;order:-1;margin-inline:auto}
+  .hero-badge{left:-14px;width:104px;height:104px}
+  .programa .head{position:static}
+  .who{grid-template-columns:1fr}
+  .incluye{grid-template-columns:1fr 1fr}
+  .incluye div,.incluye div:not(:nth-child(3n+1)){padding:24px 20px 24px 0;border-left:0}
+  .incluye div:nth-child(2n){padding-left:20px;border-left:1px solid var(--line)}
+  .pasos{grid-template-columns:1fr 1fr}
+  .marta-media{max-width:340px}
+  .top .btn{display:none}
+  .bar{display:flex}
+}
+@media (max-width:560px){
+  .hero h1{font-size:clamp(2.7rem,12vw,3.4rem)}
+  .facts{grid-template-columns:repeat(2,auto)}
+  .gallery{grid-template-columns:1fr 1fr}
+  .gallery .big{grid-column:span 2;grid-row:auto}
+  .gallery .big img{aspect-ratio:4/3}
+  .incluye{grid-template-columns:1fr}
+  .incluye div:nth-child(2n){padding-left:0;border-left:0}
+  .pasos{grid-template-columns:1fr}
+  .agenda li{grid-template-columns:1fr;gap:4px}
+  .stats{grid-template-columns:repeat(3,auto);gap:10px 22px}
+  .stats b{font-size:2rem}
+  .actions .btn{width:100%}
+  .brand .caps{display:none}
+  .cred{flex-direction:column;align-items:flex-start;gap:10px}
+  .cred img{border-right:0;padding-right:0;width:120px}
+}
+@keyframes rise{from{transform:translateY(16px)}to{transform:none}}
+.hero-copy>*{animation:rise .9s cubic-bezier(.2,.7,.2,1) both}
+.hero-copy>*:nth-child(2){animation-delay:.07s}.hero-copy>*:nth-child(3){animation-delay:.14s}.hero-copy>*:nth-child(4){animation-delay:.21s}.hero-copy>*:nth-child(5){animation-delay:.28s}
+/* tramos oscuros: chocolate y café */
+.dark{
+  --blush:#2b1b16; --blush-2:#3a251e; --white:#46302700; --nude:#6f4537; --taupe:#c49a8a; --rose:#e4a796; --rose-2:#d29483;
+  --ink:#f4e6dc; --muted:#cfb6a8; --line:rgba(244,230,220,.16);
+  background:var(--blush); color:var(--ink)}
+.dark{--white:#46302a}
+.video.dark{background:#3b261f}
+.programa.dark{background:#2b1b16}
+.marta.dark{background:#4a3128}
+.cierre.dark{background:#3b261f}
+footer.dark{background:#22150f;border-top:0}
+.top.dark{background:color-mix(in srgb,#22150f 94%,transparent);border-bottom-color:rgba(244,230,220,.12)}
+.top.dark .badge{background:#f3e7dd;border-color:transparent}
+.bar.dark{background:#22150f;border-top-color:rgba(244,230,220,.12)}
+.dark .btn--ink:hover{background:var(--rose);color:#22150f}
+.dark .reel-wrap::before,.dark .marta-media::before{background:rgba(244,230,220,.07)}
+.dark .cierre-photo{box-shadow:0 0 0 14px rgba(244,230,220,.08)}
+.dark .portrait,.dark .reel{box-shadow:0 40px 80px -40px rgba(0,0,0,.7)}
+.dark .cred--block{background:rgba(244,230,220,.06);border-color:var(--line)}
+.dark .stats b,.dark .price .now{color:var(--ink)}
+.dark .price .tag{color:#22150f}
+.who article{border-top:3px solid var(--taupe)}
+.who article:nth-child(2){border-top-color:var(--rose)}
+.who article:nth-child(3){border-top-color:#5a3a2f}
+.faq{background:#e6d2c4}
+</style>
+
+<header class="top dark">
+  <div class="wrap">
+    <a class="brand" href="#inicio" aria-label="Marta Leiva, Beauty Trainer">
+      <span class="badge"><img src="marta-logo-oscuro.png" alt="" width="900" height="513"></span>
+      <span class="caps">Marta Leiva</span>
+    </a>
+    <a class="btn btn--ink" href="https://buy.stripe.com/bJe3cu4L82Lv8qhfycg3600" target="_blank" rel="noopener">Reservar · 49,99 €</a>
+  </div>
+</header>
+
+<main id="inicio">
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-copy">
+        <p class="eyebrow">Microneedling · Formación en directo</p>
+        <h1>Microneedling capilar <span class="hl">con criterio</span></h1>
+        <p class="lede">Una sesión de 2 horas por Zoom para aprender a valorar el cuero cabelludo, elegir protocolo y activos, y ofrecer el tratamiento capilar en tu cabina con seguridad.</p>
+        <div class="price"><span class="now">49,99 €</span><span class="was">199 €</span><span class="tag">Lanzamiento</span></div>
+        <div class="actions">
+          <a class="btn btn--ink" href="https://buy.stripe.com/bJe3cu4L82Lv8qhfycg3600" target="_blank" rel="noopener">Reservar mi plaza</a>
+          <a class="link-arrow" href="#video">Ver el vídeo de Marta</a>
+        </div>
+        <a class="cred" href="#marta">
+          <img src="euneiz-logo.svg" alt="EUNEIZ, Universidad de Vitoria-Gasteiz" width="975" height="204">
+          <span>Formadora acreditada por la Universidad EUNEIZ de Vitoria-Gasteiz</span>
+        </a>
+        <dl class="facts">
+          <div><dt>Fecha</dt><dd>Mar 10 nov</dd></div>
+          <div><dt>Hora</dt><dd>19:00 h</dd></div>
+          <div><dt>Duración</dt><dd>2 horas</dd></div>
+          <div><dt>Plazas</dt><dd>40</dd></div>
+        </dl>
+        <div class="countdown" aria-live="polite">
+          <span>Empieza en</span>
+          <ol id="cd">
+            <li><b data-u="d">--</b><span>días</span></li>
+            <li><b data-u="h">--</b><span>horas</span></li>
+            <li><b data-u="m">--</b><span>min</span></li>
+          </ol>
+        </div>
+      </div>
+      <figure class="hero-media" style="margin:0">
+        <div class="portrait"><img src="marta-retrato.jpg" alt="Marta Leiva, formadora en microneedling" width="1000" height="1502" fetchpriority="high"></div>
+        <div class="hero-badge"><img src="marta-logo-oscuro.png" alt="Marta Leiva, Beauty Trainer" width="900" height="513"></div>
+      </figure>
+    </div>
+  </section>
+
+  <section class="video dark" id="video">
+    <div class="wrap">
+      <div class="reel-wrap">
+        <div class="reel">
+          <video id="promo" playsinline webkit-playsinline preload="metadata" poster="marta-promo-poster.jpg"><source src="marta-promo.mp4?v=2" type="video/mp4"></video>
+          <button class="play" id="playBtn" type="button" aria-label="Reproducir el vídeo de presentación de Marta"><i></i><span>Ver vídeo · 1:27</span></button>
+        </div>
+      </div>
+      <figure class="video-copy" style="margin:0">
+        <p class="eyebrow">Conoce a Marta</p>
+        <blockquote>Aprender microneedling no es aprender a pasar un dispositivo. <em>Es aprender a tomar decisiones.</em></blockquote>
+        <figcaption>Marta Leiva · Beauty Expert</figcaption>
+        <p>Más de 15 años en estética y cinco marcas de belleza a sus espaldas. En este directo te enseña el microneedling capilar como lo trabaja ella: con protocolo, con criterio y pensando en tu clienta.</p>
+        <div><a class="btn btn--ink" href="https://buy.stripe.com/bJe3cu4L82Lv8qhfycg3600" target="_blank" rel="noopener">Quiero mi plaza</a></div>
+      </figure>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="head center">
+        <p class="eyebrow center">Para quién es</p>
+        <h2>Pensada para quien <span class="hl">ya trabaja en cabina</span></h2>
+      </div>
+      <div class="who">
+        <article><span class="tag">Esteticista</span><h3>Quieres abrir la línea capilar</h3><p>Cada vez más clientas preguntan por la caída y la densidad del pelo. Quieres ofrecer un tratamiento capilar con una base sólida de seguridad y protocolo.</p></article>
+        <article><span class="tag">Capilar</span><h3>Ya trabajas el cuero cabelludo</h3><p>Haces tratamientos capilares y quieres sumar el microneedling, ordenar tus protocolos y elegir mejor los activos.</p></article>
+        <article><span class="tag">Dueña de centro</span><h3>Quieres que sea rentable</h3><p>Quieres saber cómo ponerle precio a un tratamiento capilar, venderlo en bonos y comunicarlo en Instagram.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="programa dark">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow">Programa de la sesión</p>
+        <h2>Dos horas, <span class="hl">minuto a minuto</span></h2>
+        <p>Cien minutos de contenido y veinte de preguntas en directo con Marta.</p>
+      </div>
+      <ol class="agenda">
+        <li><time>00 – 05</time><div><h3>Bienvenida</h3><p>Objetivo de la sesión y cómo hacer preguntas por el chat.</p></div></li>
+        <li><time>05 – 30</time><div><h3>Fundamentos</h3><p>El cuero cabelludo y el ciclo del pelo. Cómo actúa el microneedling, dispositivos, agujas y profundidades.</p></div></li>
+        <li><time>30 – 55</time><div><h3>Valoración y seguridad</h3><p>Cómo valorar el cuero cabelludo, cuándo derivar al dermatólogo, contraindicaciones, higiene y consentimiento informado.</p></div></li>
+        <li><time>55 – 85</time><div><h3>Protocolo capilar</h3><p>Preparación del cuero cabelludo, activos compatibles, frecuencia de sesiones y demostración paso a paso.</p></div></li>
+        <li><time>85 – 100</time><div><h3>Negocio</h3><p>Precio del tratamiento, bonos de sesiones, fotos de seguimiento y cuidados posteriores.</p></div></li>
+        <li><time>100 – 120</time><div><h3>Preguntas en directo</h3><p>Resuelve tus casos y dudas con Marta.</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow">Así son sus formaciones</p>
+        <h2>Formando a profesionales <span class="hl">en cabina y en directo</span></h2>
+      </div>
+      <div class="gallery">
+        <figure class="big"><img src="formacion-00.jpg" alt="Marta aplicando microneedling durante una formación" loading="lazy" width="800" height="800"></figure>
+        <figure><img src="formacion-01.jpg" alt="Marta explicando ante la pantalla en una formación" loading="lazy" width="800" height="800"></figure>
+        <figure><img src="formacion-05.jpg" alt="Marta supervisando a una alumna" loading="lazy" width="800" height="800"></figure>
+        <figure><img src="formacion-03.jpg" alt="Alumnas en una formación de Marta" loading="lazy" width="800" height="800"></figure>
+        <figure><img src="formacion-04.jpg" alt="Marta trabajando con dermapen durante una formación" loading="lazy" width="800" height="800"></figure>
+      </div>
+      <div class="gallery-note">
+        <p>Formación impartida por Marta para los equipos de Bocaré y Kelaya: protocolos, técnica y la importancia de ofrecer tratamientos con criterio, seguridad y resultados.</p>
+        <a class="link-arrow" href="https://www.instagram.com/martaleivacn/" target="_blank" rel="noopener">@martaleivacn</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="marta dark" id="marta">
+    <div class="wrap">
+      <figure class="marta-media" style="margin:0">
+        <div class="portrait"><img src="marta-editorial.jpg" alt="Retrato de Marta Leiva" loading="lazy" width="1000" height="1333"></div>
+      </figure>
+      <div class="marta-copy">
+        <img class="logo" src="marta-logo.png" alt="Marta Leiva, Beauty Trainer" width="900" height="513" loading="lazy">
+        <p class="eyebrow">Quién es Marta Leiva</p>
+        <h2>Formadora en microneedling y <span class="hl">empresaria de la belleza</span></h2>
+        <dl class="stats" style="margin:0">
+          <div><b>+15</b><span>años en estética</span></div>
+          <div><b>5</b><span>marcas de belleza</span></div>
+          <div><b>+18,7K</b><span>en TikTok</span></div>
+        </dl>
+        <p>Marta Leiva lleva más de quince años dedicada a la estética. Empezó como técnica de láser, pasó a dirigir clínicas y después dio el salto al emprendimiento.</p>
+        <p>Hoy está al frente de cinco marcas de belleza: su primer centro, Elisse Aesthetic Center, y Elisse Nails en Elgoibar, Láser&amp;Go y Laserflow. Ese día a día de cabina y de negocio es lo que lleva a sus formaciones.</p>
+        <p>Como formadora está especializada en microneedling. Es autora de varios ebooks de formación, ha sido ponente en diplomados internacionales en Latinoamérica y ha formado a equipos de profesionales de marcas como Bocaré, Kelaya, Tahe… Su forma de enseñar se resume en tres palabras: criterio, seguridad y resultados.</p>
+        <div class="cred cred--block">
+          <img src="euneiz-logo-claro.svg" alt="EUNEIZ, Universidad de Vitoria-Gasteiz" width="975" height="204" loading="lazy">
+          <span>Formadora acreditada por la Universidad EUNEIZ de Vitoria-Gasteiz</span>
+        </div>
+        <p class="motto">Llena tu agenda sin vivir en cabina.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="head center">
+        <p class="eyebrow center">Cómo funciona</p>
+        <h2>De la reserva <span class="hl">al directo</span></h2>
+      </div>
+      <div class="pasos">
+        <div><h3>Reservas tu plaza</h3><p>Pagas de forma segura con tarjeta en la página de Stripe.</p></div>
+        <div><h3>Recibes el acceso</h3><p>Te llega un email con el enlace de Zoom, el grupo y la invitación al calendario.</p></div>
+        <div><h3>Te recordamos la cita</h3><p>Un aviso 24 horas antes y otro una hora antes.</p></div>
+        <div><h3>Te conectas</h3><p>El martes 10 de noviembre a las 19:00 entras desde el ordenador, la tablet o el móvil.</p></div>
+      </div>
+      <div class="incluye" style="margin-top:clamp(56px,8vw,90px)">
+        <div><h3>Sesión en directo</h3><p>2 horas por Zoom con Marta, con turno de preguntas.</p></div>
+        <div><h3>Grabación 7 días</h3><p>Vuelve a verla tantas veces como quieras durante una semana.</p></div>
+        <div><h3>Material en PDF</h3><p>Resumen de la sesión, ficha de valoración capilar y modelo de consentimiento.</p></div>
+        <div><h3>Certificado</h3><p>Certificado de asistencia en PDF con tu nombre.</p></div>
+        <div><h3>Grupo de WhatsApp</h3><p>Para dudas, abierto hasta 7 días después de la sesión.</p></div>
+        <div><h3>Pago seguro</h3><p>Con tarjeta a través de Stripe, en una página de pago protegida.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow">Preguntas frecuentes</p>
+        <h2>Antes <span class="hl">de reservar</span></h2>
+        <p>¿Te queda alguna duda? Escribe <b>CAPILAR</b> a Marta por Instagram y te responde.</p>
+        <p><a class="link-arrow" href="https://drive.google.com/file/d/1Z83p2jlWTOrRyGDOxlH2DaYQBgkkT3sq/view" target="_blank" rel="noopener">Descargar la guía de la formación (PDF)</a></p>
+        <p><a class="link-arrow" href="https://whatsapp.com/channel/0029Vb9IIPADTkK5ErPmyS2r" target="_blank" rel="noopener">Síguenos en el canal de WhatsApp</a></p>
+      </div>
+      <div>
+        <details><summary>¿Necesito experiencia previa con microneedling?</summary><p>No. La sesión parte de los fundamentos del cuero cabelludo, y también aporta protocolos y casos a quien ya trabaja la línea capilar.</p></details>
+        <details><summary>¿Sirve para cualquier tipo de caída?</summary><p>No, y saberlo es parte de la formación. Verás qué casos puedes tratar en cabina y cuáles debes derivar al dermatólogo antes de empezar.</p></details>
+        <details><summary>¿Y si no puedo asistir en directo?</summary><p>Tendrás la grabación disponible durante 7 días después de la sesión, aunque en directo podrás preguntar a Marta.</p></details>
+        <details><summary>¿Y si me conecto desde fuera de España?</summary><p>El directo es a las 19:00 hora de España, y puedes conectarte desde cualquier país. Por ejemplo, en México son las 12:00. Si no te viene bien la hora, tienes la grabación durante 7 días.</p></details>
+        <details><summary>¿Qué necesito para conectarme?</summary><p>Un ordenador, tablet o móvil con conexión a internet. Zoom es gratuito para asistentes.</p></details>
+        <details><summary>¿Recibo factura?</summary><p>Sí. Después del pago escribe a martaleivacn@gmail.com con tus datos fiscales y te la enviamos.</p></details>
+        <details><summary>¿El certificado es una titulación oficial?</summary><p>No. Es un certificado de asistencia a una formación privada. Antes de aplicar la técnica, revisa la normativa de tu comunidad autónoma sobre qué profundidades puedes trabajar.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="cierre dark">
+    <div class="wrap">
+      <div class="cierre-photo"><img src="marta-cercana.jpg" alt="Marta Leiva sonriendo" loading="lazy" width="900" height="1200"></div>
+      <div class="cierre-copy">
+        <p class="eyebrow">Martes 10 de noviembre · 19:00 · Zoom</p>
+        <h2>Te espero <span class="hl">en el directo</span></h2>
+        <p>Solo 40 plazas, para poder responder a todas las preguntas.</p>
+        <div class="price"><span class="now">49,99 €</span><span class="was">199 €</span></div>
+        <div class="actions">
+          <a class="btn btn--ink" href="https://buy.stripe.com/bJe3cu4L82Lv8qhfycg3600" target="_blank" rel="noopener">Reservar mi plaza</a>
+        </div>
+        <p class="dudas">¿Prefieres hablarlo antes? <a href="https://ig.me/m/martaleivacn" target="_blank" rel="noopener">Escribe CAPILAR a Marta por Instagram</a></p>
+        <p class="dudas">¿Quieres verlo con calma? <a href="https://drive.google.com/file/d/1Z83p2jlWTOrRyGDOxlH2DaYQBgkkT3sq/view" target="_blank" rel="noopener">Descarga la guía de la formación</a></p>
+        <p class="dudas">¿Quieres enterarte antes que nadie de fechas y plazas? <a href="https://whatsapp.com/channel/0029Vb9IIPADTkK5ErPmyS2r" target="_blank" rel="noopener">Síguenos en el canal de WhatsApp</a></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="dark">
+  <p class="sig">Marta Leiva · Beauty Expert</p>
+  <p>© 2026 Marta Leiva · Formaciones para profesionales de la estética · martaleivacn@gmail.com</p>
+</footer>
+
+<div class="bar dark" role="region" aria-label="Reserva rápida">
+  <div class="p"><b>49,99 €</b><span><s>199 €</s> · 10 nov · 19:00</span></div>
+  <a class="btn btn--ink" href="https://buy.stripe.com/bJe3cu4L82Lv8qhfycg3600" target="_blank" rel="noopener">Reservar plaza</a>
+</div>
+
+<script>
+(function(){
+  var target=new Date("2026-11-10T19:00:00+01:00").getTime();
+  var el=document.getElementById("cd");
+  function pad(n){return String(n).padStart(2,"0")}
+  function tick(){
+    var ms=target-Date.now();
+    if(ms<=0){el.parentNode.innerHTML="<span>El directo ya ha empezado</span>";return}
+    el.querySelector('[data-u="d"]').textContent=Math.floor(ms/864e5);
+    el.querySelector('[data-u="h"]').textContent=pad(Math.floor(ms%864e5/36e5));
+    el.querySelector('[data-u="m"]').textContent=pad(Math.floor(ms%36e5/6e4));
+  }
+  tick(); setInterval(tick,30000);
+  var v=document.getElementById("promo"), b=document.getElementById("playBtn");
+  var REEL="https://www.instagram.com/reel/DbG6RsGus8t/";
+  var framed=false; try{ framed = window.top!==window.self; }catch(e){ framed=true; }
+  var inApp=framed && /Instagram|FBAN|FBAV|FB_IAB|Messenger/i.test(navigator.userAgent||"");
+  function openReel(){ var w=null; try{ w=window.open(REEL,"_blank"); }catch(e){} if(!w){ fallback(); } }
+  function fallback(){
+    if(document.getElementById("vidFallback"))return;
+    v.controls=false;b.hidden=true;try{v.pause()}catch(e){}
+    var a=document.createElement("a");a.id="vidFallback";a.href=REEL;a.target="_blank";a.rel="noopener";
+    a.textContent="Ver el vídeo de Marta en Instagram";
+    a.style.cssText="position:absolute;left:50%;bottom:24px;transform:translateX(-50%);background:#f3e7dd;color:#2a1c18;padding:12px 20px;border-radius:999px;font:600 14px Jost,sans-serif;text-decoration:none;white-space:nowrap;z-index:3";
+    v.parentNode.appendChild(a);
+  }
+  if(inApp){ v.preload="none"; }
+  b.addEventListener("click",function(){
+    if(inApp){ openReel(); return; }
+    v.controls=true;b.hidden=true;
+    var started=false; v.addEventListener("playing",function(){started=true},{once:true});
+    setTimeout(function(){ if(!started && v.currentTime<0.2) fallback(); },6000);
+    var p=v.play();
+    if(p&&p.catch)p.catch(function(){ setTimeout(function(){ if(!started) fallback(); },1500); });
+  });
+  v.addEventListener("error",fallback,true);
+  var s=v.querySelector("source"); if(s) s.addEventListener("error",fallback);
+  v.addEventListener("ended",function(){v.controls=false;b.hidden=false;v.currentTime=0});
+})();
+</script>
